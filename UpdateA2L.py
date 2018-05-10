@@ -1,4 +1,4 @@
-# -*- coding:utf-8 -*-
+﻿# -*- coding:utf-8 -*-
 import re
 i = 0
 Flag = 0
@@ -8,7 +8,7 @@ f_new = open('new_file.a2l','w')
 
 for line in f:
     i = i+1
-    # 若包含 begin、MEASUREMENT和 . 分离出后缀
+    # 若包含 begin、######MEASUREMENT和 . 分离出后缀
     if (line.find('begin') != -1) and (line.find('MEASUREMENT') != -1) and (line.find('.') != -1):
         #print line.split()
         #print line.split()[2]                   #提取到目标信号
